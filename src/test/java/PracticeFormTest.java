@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Locale;
 
-public class PracticeFormTest {
+public class PracticeFormTest extends TestBase {
     PracticeFormPage practiceFormPage = new PracticeFormPage();
     Faker fakerRu = new Faker(new Locale("ru"));
     Faker fakerEng = new Faker();
