@@ -13,7 +13,7 @@ public class TestBase {
     }
 
     @AfterAll
-    public void tearDown(){
+    static void tearDown(){
         closeWebDriver();
     }
 }
