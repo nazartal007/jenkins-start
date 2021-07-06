@@ -40,6 +40,7 @@ tasks.withType(JavaCompile) {
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     systemProperty("browser", System.getProperty("browser", "opera"))
+    systemProperty("selenideUrl", System.getProperty("selenideUrl"));
     useJUnitPlatform()
 
     testLogging {
@@ -54,5 +55,11 @@ tasks.withType(Test) {
 task some_run(type: Test) {
     useJUnitPlatform {
         includeTags 'terminal'
+    }
+}
+
+task owner_run(type: Test) {
+    useJUnitPlatform {
+        includeTags 'owner'
     }
 }

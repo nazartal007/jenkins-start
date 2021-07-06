@@ -13,4 +13,13 @@ public interface CredentialsConfig extends Config {
 
     @Key("password")
     String password();
+
+    @Key("basicAuthLogin")
+    String basicAuthLogin();
+
+    @Key("basicAuthPassword")
+    String basicAuthPassword();
+
+    @Key("selenoidUrl")
+    String selenoidUrl();
 }
